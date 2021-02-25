@@ -1,4 +1,6 @@
-class Solution {
+package java;
+
+class ProductExceptSelf {
     public int[] productExceptSelf(int[] nums) {
         
         int[] new_arr = new int[nums.length];

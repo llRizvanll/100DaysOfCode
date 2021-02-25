@@ -1,3 +1,8 @@
+package java;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -7,7 +12,15 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+
+class BinaryTreePath {
+
+    private class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
+    }
     public List<String> binaryTreePaths(TreeNode root) {
         
         List<String> paths = new ArrayList<>();
@@ -22,7 +35,7 @@ class Solution {
         return paths;
     }
     
-    public void dfs(TreeNode root,String path,List<String> paths){
+    private void dfs(TreeNode root,String path,List<String> paths){
         path += root.val;
         
         if (root.left == null && root.right == null){

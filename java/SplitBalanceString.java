@@ -1,4 +1,6 @@
-class Solution {
+package java;
+
+class SplitBalanceString {
     public int balancedStringSplit(String s) {
         int balancedCount = 0;
         int count = 0;

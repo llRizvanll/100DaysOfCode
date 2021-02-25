@@ -1,4 +1,6 @@
-class Solution {
+package java;
+
+class MinCostMergeStone {
     public int mergeStones(int[] stones, int k) {
         if(k!=2 && stones.length%(k-1)!=1) return -1;
         int size= stones.length;

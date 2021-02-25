@@ -1,4 +1,6 @@
-class Solution {
+package java;
+
+class validMountainArray {
     public boolean validMountainArray(int[] A) {
         
         int i = 0;

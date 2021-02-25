@@ -1,4 +1,6 @@
-class Solution {
+package java;
+
+class BestTimeToBuyAndSell4 {
     public int maxProfit(int k, int[] prices) {
         int len = prices.length;
         if (k >= len / 2) return quickSolve(prices);

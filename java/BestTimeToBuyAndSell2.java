@@ -1,4 +1,6 @@
-class Solution {
+package java;
+
+class BestTimeToBuyAndSell2 {
     public int maxProfit(int[] prices) {
         int i = 0, buy, sell, profit = 0, N = prices.length - 1;
         while (i < N) {
